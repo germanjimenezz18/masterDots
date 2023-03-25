@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <title>MasterDots Game</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <!-- CABECERA -->
+    <header>
+        <img src="img/logo.png" alt="">
+    </header>
+    <!--  FORMULARIO-->
+    <main>
+        <div class="">
+            <p id="error"></p>
+        </div>
+        <form action="juego.html" id="formEntrada">
+            <div class="itemform">
+                <label for="nick">Introduce tu nick: </label>
+                <input type="text" name="nick" id="nicka" value="@" readonly>
+                <input type="text" name="nick" id="nick" value="" required minlength="2">
+            </div>
+            <div class="itemform">
+                <label for="mail">correo electronico</label>
+                <input type="email" name="MAIL" id="correo" value="" placeholder="yo@gmail.com">
+                
+            </div>
+
+            <div class="itemform">
+                <label for="tamano">Game size: </label>
+                <select name="tamano" id="tamano">
+                    <option value="0">--Choose Size--</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <input type="submit" value="JUGAR" id="jugar">
+            </div>
+
+
+        </form>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+
+        <p>Curso Frontend</p>
+    </footer>
+    <script src="js/app.js"></script>
+
 </body>
 </html>
