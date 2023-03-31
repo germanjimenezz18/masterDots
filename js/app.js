@@ -6,8 +6,7 @@ let formEntrada;
 let error;
 let avatarItems;
 let itemImg;
-let avatarContainer;
-
+var avatarContainer;
 
 
 
@@ -27,7 +26,7 @@ function comprobarForm(event) {
 
     }
     //Informacion es correcta
-    datosUsuario(nickInput, tamanoSelect, email)
+    datosUsuario(nickInput, tamanoSelect, email,avatarContainer )
     historicoUsuario(nickInput)
     return true
 
@@ -46,9 +45,12 @@ function cambiarContainer(event) {
 function domCargado() {
     nickInput = document.getElementById("nick")
     tamanoSelect = document.getElementById("tamano")
+    
     formEntrada = document.getElementById("formEntrada")
     error = document.getElementById("error")
+    console.log(tamanoSelect.value);
     email = document.getElementById("email")
+    
 
 
     //Comprobar si hay error de juego.html
